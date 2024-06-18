@@ -1,0 +1,147 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+header {
+    font-size: 24px;
+    background-color: #5382b4; 
+    text-align: center;
+    padding: 20px 40px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+
+}
+header div{
+
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+header h1 {
+    font-size: 70px;
+}
+.container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+    
+  }
+#recipe-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#recipe-list {
+    list-style-type: none; 
+    padding: 0;
+  }
+  
+#recipe-list li {
+    margin-top: 20px;
+    background-color: #fff;
+    margin-bottom: 10px; 
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d1d0d0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+  
+  #recipe-list li:hover {
+    transform: scale(1.02); 
+  }
+  
+  @media (max-width: 600px) {
+        .container {
+      padding: 10px;
+    }
+  
+    header {
+      padding: 10px 0;
+    }
+  }
+
+.recipe-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.recipe-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.recipe-item h2 {
+    margin: 0;
+    padding: 1%;
+    font-size: 24px;
+    min-width: 200px
+}
+.recipe-item p {
+    margin: 0;
+    padding: 1%;
+    font-size: 18px;
+    color: #777;
+}
+.recipe-item a {
+    padding: 1%;
+    background-color: #002c57;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.recipe-item a:hover {
+    background-color: #004c8c;
+}
+#loading-indicator {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-animation:before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border: 4px solid #fff;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px; 
+        font-size: 20px;    
+    }
+}
