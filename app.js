@@ -65,3 +65,5 @@ async function init(){
     const recipes = await getRecipes()
     displayRecipes(recipes)
 }
+
+init()
